@@ -77,8 +77,7 @@ typedef volatile ADAGFX_PORT_t *PORTreg_t; ///< PORT register type
     defined(ADAFRUIT_CIRCUITPLAYGROUND_M0)
 #define USE_SPI_DMA ///< Auto DMA
 #else
-                                           //#define USE_SPI_DMA ///< If set,
-                                           // use DMA if available
+    #define USE_SPI_DMA ///< If set, use DMA if available
 #endif
 // Another "oops" name -- this now also handles parallel DMA.
 // If DMA is enabled, Arduino sketch MUST #include <Adafruit_ZeroDMA.h>
